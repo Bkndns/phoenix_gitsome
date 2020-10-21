@@ -21,7 +21,7 @@
             <a href="/">All</a>
           </li>
           <li>
-              <a href="/?min_stars=10">≥10⭐</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 10) %>">≥10⭐</a>
             </li>
             <li>
               <a href="/?min_stars=50">≥50⭐</a>
