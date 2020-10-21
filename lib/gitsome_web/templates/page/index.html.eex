@@ -1,0 +1,28 @@
+<main>
+<h2>Contents</h2>
+
+  <%= for content <- @github_content do %>
+  <li>
+    <a href="#<%=content["id"]%>"><%= content["category"] %></a>
+  </li>
+  <% end %>
+
+  <%# --------------------------- %>
+
+  <%= for content <- @github_content do %>
+    <h2 id="<%=content["id"]%>"><%= content["category"] %></h2>
+    <p><%= content["category_description"] %></p>
+    <ul>
+    <%= for repos <- content["repositories"] do %>
+      <li class="<%=repos["repo_activity_status"]%>">
+        <a href="<%=repos["repo_link"]%>"><%=repos["repo_name"]%></a>
+        ⭐<sub><%=repos["repo_stars"]%></sub>
+        📅<sub><%=repos["repo_last_commit_date"]%></sub>
+        —
+        <span><%= raw(repos["repo_description"]) %></span>
+      </li>
+    <% end %>
+    </ul>
+  <% end %>
+
+</main>

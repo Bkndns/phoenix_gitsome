@@ -1,0 +1,7 @@
+@token = 375cdb206cdd56392faa094cdf816ef9604bd774
+
+### Проверить rate limit github по токену и ip
+
+GET https://api.github.com/rate_limit HTTP/1.1
+Authorization: token {{token}}
+Accept: application/vnd.github.v3+json
