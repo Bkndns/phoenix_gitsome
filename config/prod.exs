@@ -11,7 +11,7 @@ use Mix.Config
 # before starting your production server.
 config :gitsome, GitsomeWeb.Endpoint,
   http: [port: {:system, "PORT"}], # Possibly not needed, but doesn't hurt
-  url: [host: "${APP_NAME}.gigalixirapp.com", port: 443],
+  url: [host: "miniature-loose-blowfish.gigalixirapp.com", port: 443],
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true
   cache_static_manifest: "priv/static/cache_manifest.json"
