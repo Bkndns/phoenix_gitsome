@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Bkndns">
 
     <title>Awesome Elixir</title>
     <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
@@ -24,19 +24,19 @@
               <a href="<%= Routes.page_path(@conn, :index, min_stars: 10) %>">≥10⭐</a>
             </li>
             <li>
-              <a href="/?min_stars=50">≥50⭐</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 50) %>">≥50⭐</a>
             </li>
             <li>
-              <a href="/?min_stars=100">≥100⭐</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 100) %>">≥100⭐</a>
             </li>
             <li>
-              <a href="/?min_stars=500">≥500⭐</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 500) %>">≥500⭐</a>
             </li>
             <li>
-              <a href="/?min_stars=1000">≥1000🌟</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 1000) %>">≥1000🌟</a>
             </li>
             <li>
-              <a href="/?min_stars=5000">≥5000🌟</a>
+              <a href="<%= Routes.page_path(@conn, :index, min_stars: 5000) %>">≥5000🌟</a>
             </li>
         </ul>
       </nav>
