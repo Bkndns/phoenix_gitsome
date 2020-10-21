@@ -96,7 +96,7 @@ defmodule Gitsome.GithubTasker do
     # Авто создание ttl таблицы
     create_table()
     # Автозапуск парсинга репозиториев
-    # _parse_awesome_repo()
+    _parse_awesome_repo()
     {:ok, init_arg}
   end
 
