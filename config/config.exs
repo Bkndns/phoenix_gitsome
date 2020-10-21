@@ -8,7 +8,8 @@
 import Config
 
 # Личный ключ доступа к GitHub
-config :gitsome, :git_hub_key, "375cdb206cdd56392faa094cdf816ef9604bd774"
+# Example: config :gitsome, :git_hub_key, "375cdb206cdd56392faa094cdf816ef9604bd777"
+config :gitsome, :git_hub_key, "PUT_YOUR_GITHUB_TOCKEN_HERE"
 
 # Configures the endpoint
 config :gitsome, GitsomeWeb.Endpoint,
